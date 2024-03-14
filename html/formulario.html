@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--action??-->
+<!--value?? es lo que recive el server o es lo que previsualiza??-->
+<!--que es el name??-->
+<!--form tambien tiene que tener un name??-->
+<!--button no necesita input?? o input type="submit"-->
+<!--el boton reset tiene que estar en una form distinta??-->
+<!--textarea es sin input??-->
+<!--span??-->
+<!--label es solo para formularios , sino se usa p o h1?-->
+<!--como usar el search dentro de la pagina??-->
+<!--que va dentro de footer?-->
+<!--que va dentro de main?-->
+<!--que va dentro de header??-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1><u>Formulario</u></h1>
+    <hr>
+    <section>
+        <div>
+            <fieldset>
+                <legend>
+                    <h2><b>Datos Personales</b></h2>
+                </legend>
+                <form action="./resultados formulario.html" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombresuj">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellidosuj">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="email">Mail:</label>
+                        <input type="email" id="email" name="mail" required>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telef">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="nacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" id="nacimiento" name="fechaNac">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="imagen">Foto:</label>
+                        <input type="file" id="imagen" name="fotosuj">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="web">Página web:</label>
+                        <input type="url" id="web" name="pagsuj">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="data">Información adicional</label>
+                        <br>
+                        <textarea id="data" name="infosuj" rows="7" cols="50" 
+                            placeholder="Escriba aquí"
+                            maxlength="200"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <section>
+        <div>
+            <fieldset>
+                <legend>
+                    <h2><b>Log in</b></h2>
+                </legend>
+                <form method="post">
+                    <div>
+                        <label for="usuario">Usuario:</label>
+                        <input tyoe="text" id="usuario" name="ususuj" required placeholder="pepita">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="consuj" required min="8" placeholder="pepita">
+                    </div>
+                    <br>
+                    <input type="submit" id="mandar" value="Iniciar sesion">
+                    <button type="button">Registrarse</button>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section>
+        <div>
+            <fieldset>
+                <legend><b>
+                        <h2>Carrito</h2>
+                    </b></legend>
+                <form method="post" action="./resultados formulario.html">
+                    <div>
+                        <label for="producto">¿Qué producto desea comprar?</label>
+                        <select id="producto" name="eleccion">
+                            <option value="monstera">monstera</option>
+                            <option value="potus" selected>potus</option>
+                            <option value="sisus">sisus</option>
+                            <option value="tierra">tierra</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="cantidad">¿Cuantas unidades desea coprar?</label>
+                        <input type="number" min="1" id="cantidad" name="unidades">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="tipo">¿Qué forma de envío prefiere?</label>
+                        <input id="tipo" type="radio" name="envio" value="comun">Común
+                        <input id="tipo" type="radio" name="envio" value="express" checked>Express
+                    </div>
+                    <br>
+                    <div>
+                        <fieldset>
+                            <legend>Seleccione material adicional</legend>
+                            <input type="checkbox" name="maad" value="libro">Libro de plantas
+                            <input type="checkbox" name="maad" value="semillas">Mix de semillas
+                            <input type="checkbox" name="maad" value="video">Video explicativo
+                            <input type="checkbox" name="maad" value="pdf">Calendario de siembra
+                        </fieldset>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="opinion">¿Qué tan satisfecho esta con nuestra atención?</label>
+                        <input type="range" id="opinion" name="opisuj">
+                    </div>
+                    <br>
+                    <hr>
+                    <div>
+                        <button>Comprar</button>
+                        <button>Limpiar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+</body>
+
+</html>
